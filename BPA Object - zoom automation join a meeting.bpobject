@@ -1,0 +1,1087 @@
+﻿<process name="zoom automation join a meeting" version="1.0" bpversion="6.10.2.42081" narrative="" byrefcollection="true" type="object" runmode="Exclusive" preferredid="040d9a8a-aff0-4cb5-9689-ee34c04e56da">
+  <appdef>
+    <element name="zoom automation join a meeting">
+      <id>a3cdb353-c2e0-4a5c-abf5-b74c533ebe95</id>
+      <element name="meeting ID">
+        <id>944c776c-1156-4ccd-8337-17a6eb81def4</id>
+        <type>UIAEdit</type>
+        <basetype>UIAEdit</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX">
+            <ProcessValue datatype="number" value="901" />
+          </attribute>
+          <attribute name="uY">
+            <ProcessValue datatype="number" value="231" />
+          </attribute>
+          <attribute name="uWidth">
+            <ProcessValue datatype="number" value="330" />
+          </attribute>
+          <attribute name="uHeight">
+            <ProcessValue datatype="number" value="48" />
+          </attribute>
+          <attribute name="uClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" inuse="True">
+            <ProcessValue datatype="text" value="Edit" />
+          </attribute>
+          <attribute name="uLocalizedControlType">
+            <ProcessValue datatype="text" value="edit" />
+          </attribute>
+          <attribute name="uIsPassword">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" inuse="True">
+            <ProcessValue datatype="text" value="Please enter your Meeting ID or Personal Link Name" />
+          </attribute>
+          <attribute name="uOrientation">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus">
+            <ProcessValue datatype="text" value="False" />
+          </attribute>
+          <attribute name="uHelpText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId">
+            <ProcessValue datatype="text" value="2556" />
+          </attribute>
+          <attribute name="puControlType">
+            <ProcessValue datatype="text" value="Pane" />
+          </attribute>
+          <attribute name="puLocalizedControlType">
+            <ProcessValue datatype="text" value="pane" />
+          </attribute>
+          <attribute name="puClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="name">
+        <id>ebbe40d6-b112-4fee-a16a-b41a2f2957f4</id>
+        <type>UIAEdit</type>
+        <basetype>UIAEdit</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX">
+            <ProcessValue datatype="number" value="901" />
+          </attribute>
+          <attribute name="uY">
+            <ProcessValue datatype="number" value="287" />
+          </attribute>
+          <attribute name="uWidth">
+            <ProcessValue datatype="number" value="330" />
+          </attribute>
+          <attribute name="uHeight">
+            <ProcessValue datatype="number" value="48" />
+          </attribute>
+          <attribute name="uClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" inuse="True">
+            <ProcessValue datatype="text" value="Edit" />
+          </attribute>
+          <attribute name="uLocalizedControlType">
+            <ProcessValue datatype="text" value="edit" />
+          </attribute>
+          <attribute name="uIsPassword">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" inuse="True">
+            <ProcessValue datatype="text" value="Please enter your name" />
+          </attribute>
+          <attribute name="uOrientation">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uHelpText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId">
+            <ProcessValue datatype="text" value="2556" />
+          </attribute>
+          <attribute name="puControlType">
+            <ProcessValue datatype="text" value="Pane" />
+          </attribute>
+          <attribute name="puLocalizedControlType">
+            <ProcessValue datatype="text" value="pane" />
+          </attribute>
+          <attribute name="puClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="join button 1">
+        <id>5fd1e677-ba12-4271-969e-4fb60ecdb4e0</id>
+        <type>UIAButton</type>
+        <basetype>UIAButton</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX">
+            <ProcessValue datatype="number" value="1196" />
+          </attribute>
+          <attribute name="uY">
+            <ProcessValue datatype="number" value="586" />
+          </attribute>
+          <attribute name="uWidth">
+            <ProcessValue datatype="number" value="88" />
+          </attribute>
+          <attribute name="uHeight">
+            <ProcessValue datatype="number" value="32" />
+          </attribute>
+          <attribute name="uClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" inuse="True">
+            <ProcessValue datatype="text" value="Button" />
+          </attribute>
+          <attribute name="uLocalizedControlType">
+            <ProcessValue datatype="text" value="button" />
+          </attribute>
+          <attribute name="uIsPassword">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" inuse="True">
+            <ProcessValue datatype="text" value="Join" />
+          </attribute>
+          <attribute name="uOrientation">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled">
+            <ProcessValue datatype="text" value="False" />
+          </attribute>
+          <attribute name="uAcceleratorKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus">
+            <ProcessValue datatype="text" value="False" />
+          </attribute>
+          <attribute name="uHelpText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId">
+            <ProcessValue datatype="text" value="2556" />
+          </attribute>
+          <attribute name="puControlType">
+            <ProcessValue datatype="text" value="Pane" />
+          </attribute>
+          <attribute name="puLocalizedControlType">
+            <ProcessValue datatype="text" value="pane" />
+          </attribute>
+          <attribute name="puClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="password">
+        <id>fd022d29-2c1f-40f0-a638-cfcd8910323b</id>
+        <type>UIAEdit</type>
+        <basetype>UIAEdit</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX">
+            <ProcessValue datatype="number" value="782" />
+          </attribute>
+          <attribute name="uY">
+            <ProcessValue datatype="number" value="352" />
+          </attribute>
+          <attribute name="uWidth">
+            <ProcessValue datatype="number" value="330" />
+          </attribute>
+          <attribute name="uHeight">
+            <ProcessValue datatype="number" value="48" />
+          </attribute>
+          <attribute name="uClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" inuse="True">
+            <ProcessValue datatype="text" value="Edit" />
+          </attribute>
+          <attribute name="uLocalizedControlType">
+            <ProcessValue datatype="text" value="edit" />
+          </attribute>
+          <attribute name="uIsPassword">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="uIsRequiredForForm">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" inuse="True">
+            <ProcessValue datatype="text" value="Please enter meeting passcode" />
+          </attribute>
+          <attribute name="uOrientation">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uHelpText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId">
+            <ProcessValue datatype="text" value="2556" />
+          </attribute>
+          <attribute name="puControlType">
+            <ProcessValue datatype="text" value="Pane" />
+          </attribute>
+          <attribute name="puLocalizedControlType">
+            <ProcessValue datatype="text" value="pane" />
+          </attribute>
+          <attribute name="puClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="join button 2">
+        <id>e9418814-daf2-411f-b5f9-2e8a246cc550</id>
+        <type>UIAButton</type>
+        <basetype>UIAButton</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX">
+            <ProcessValue datatype="number" value="906" />
+          </attribute>
+          <attribute name="uY">
+            <ProcessValue datatype="number" value="609" />
+          </attribute>
+          <attribute name="uWidth">
+            <ProcessValue datatype="number" value="110" />
+          </attribute>
+          <attribute name="uHeight">
+            <ProcessValue datatype="number" value="32" />
+          </attribute>
+          <attribute name="uClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" inuse="True">
+            <ProcessValue datatype="text" value="Button" />
+          </attribute>
+          <attribute name="uLocalizedControlType">
+            <ProcessValue datatype="text" value="button" />
+          </attribute>
+          <attribute name="uIsPassword">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" inuse="True">
+            <ProcessValue datatype="text" value="Join Meeting" />
+          </attribute>
+          <attribute name="uOrientation">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus">
+            <ProcessValue datatype="text" value="False" />
+          </attribute>
+          <attribute name="uHelpText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId">
+            <ProcessValue datatype="text" value="2556" />
+          </attribute>
+          <attribute name="puControlType">
+            <ProcessValue datatype="text" value="Pane" />
+          </attribute>
+          <attribute name="puLocalizedControlType">
+            <ProcessValue datatype="text" value="pane" />
+          </attribute>
+          <attribute name="puClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="check1">
+        <id>8beb1973-8dfd-41d7-8092-28388dcae871</id>
+        <type>UIACheckBox</type>
+        <basetype>UIACheckBox</basetype>
+        <datatype>flag</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX">
+            <ProcessValue datatype="number" value="165" />
+          </attribute>
+          <attribute name="uY">
+            <ProcessValue datatype="number" value="352" />
+          </attribute>
+          <attribute name="uWidth">
+            <ProcessValue datatype="number" value="171" />
+          </attribute>
+          <attribute name="uHeight">
+            <ProcessValue datatype="number" value="26" />
+          </attribute>
+          <attribute name="uClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" inuse="True">
+            <ProcessValue datatype="text" value="CheckBox" />
+          </attribute>
+          <attribute name="uLocalizedControlType">
+            <ProcessValue datatype="text" value="check box" />
+          </attribute>
+          <attribute name="uIsPassword">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" inuse="True">
+            <ProcessValue datatype="text" value="Do not connect to audio" />
+          </attribute>
+          <attribute name="uOrientation">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus">
+            <ProcessValue datatype="text" value="False" />
+          </attribute>
+          <attribute name="uHelpText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId">
+            <ProcessValue datatype="text" value="6516" />
+          </attribute>
+          <attribute name="puControlType">
+            <ProcessValue datatype="text" value="Pane" />
+          </attribute>
+          <attribute name="puLocalizedControlType">
+            <ProcessValue datatype="text" value="pane" />
+          </attribute>
+          <attribute name="puClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="check2">
+        <id>832ac11c-6917-47f9-b04d-877087f470b4</id>
+        <type>UIACheckBox</type>
+        <basetype>UIACheckBox</basetype>
+        <datatype>flag</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX">
+            <ProcessValue datatype="number" value="1001" />
+          </attribute>
+          <attribute name="uY">
+            <ProcessValue datatype="number" value="555" />
+          </attribute>
+          <attribute name="uWidth">
+            <ProcessValue datatype="number" value="132" />
+          </attribute>
+          <attribute name="uHeight">
+            <ProcessValue datatype="number" value="26" />
+          </attribute>
+          <attribute name="uClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" inuse="True">
+            <ProcessValue datatype="text" value="CheckBox" />
+          </attribute>
+          <attribute name="uLocalizedControlType">
+            <ProcessValue datatype="text" value="check box" />
+          </attribute>
+          <attribute name="uIsPassword">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" inuse="True">
+            <ProcessValue datatype="text" value="Turn off my video" />
+          </attribute>
+          <attribute name="uOrientation">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uHelpText">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId">
+            <ProcessValue datatype="text" value="6516" />
+          </attribute>
+          <attribute name="puControlType">
+            <ProcessValue datatype="text" value="Pane" />
+          </attribute>
+          <attribute name="puLocalizedControlType">
+            <ProcessValue datatype="text" value="pane" />
+          </attribute>
+          <attribute name="puClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Attach</id>
+      <parameters>
+        <parameter>
+          <name>WindowTitle</name>
+          <value>Zoom</value>
+        </parameter>
+        <parameter>
+          <name>ProcessName</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>Path</name>
+          <value>C:\Users\y.satish kumar\AppData\Roaming\Zoom\bin\Zoom.exe</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+        <parameter>
+          <name>Options</name>
+          <value>
+          </value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="767d297c-289b-4621-b71b-90615f3ee052" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b83bd33d-34da-4ba2-9e07-0b91997830ce" type="Normal" published="True">
+    <name>join to the meeting</name>
+    <view>
+      <camerax>32</camerax>
+      <cameray>1</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="a5f1f3ed-5692-429f-9b38-20d024f2ad18" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>2de78f5f-ea3c-4e4e-bf7e-ef97ff5bd452</onsuccess>
+  </stage>
+  <stage stageid="2de78f5f-ea3c-4e4e-bf7e-ef97ff5bd452" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="58d03dcc-7e1b-4c1a-85a4-80840ddf2afd" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="d7047209-d5a9-4a7f-82f5-e32558f73d68" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>767d297c-289b-4621-b71b-90615f3ee052</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="6e23cf07-6db8-450b-8c8e-df40de5d13c7" name="Start" type="Start">
+    <subsheetid>767d297c-289b-4621-b71b-90615f3ee052</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>54ef1228-f4f0-4878-91a5-068e6ba3b23b</onsuccess>
+  </stage>
+  <stage stageid="54ef1228-f4f0-4878-91a5-068e6ba3b23b" name="End" type="End">
+    <subsheetid>767d297c-289b-4621-b71b-90615f3ee052</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="d1a62151-4d6e-4cd5-8526-bdec72f8e45b" name="join to the meeting" type="SubSheetInfo">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="18b7e558-f784-4192-a611-2314e1d3607b" name="Start" type="Start">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="-180" />
+    <inputs>
+      <input type="text" name="name" stage="name" />
+      <input type="text" name="link" stage="link" />
+      <input type="password" name="password" stage="password" />
+    </inputs>
+    <onsuccess>267babda-a1f1-4b3f-9a61-4da47a32b1be</onsuccess>
+  </stage>
+  <stage stageid="cf7816b0-6e58-4af7-9605-c1ba3fd4909e" name="End" type="End">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="180" />
+  </stage>
+  <stage stageid="cf76271d-3237-48fb-99dc-27eb4f31ecc7" name="Note1" type="Note">
+    <subsheetid>767d297c-289b-4621-b71b-90615f3ee052</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="1d501aad-38d7-4578-b012-4861b4da6c89" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="5993a1b9-99e8-45d3-ab7c-4795e0d90fb7" name="attach zoom" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="-150" />
+    <onsuccess>c133420c-7f0f-42b2-a3f2-a961d04bb866</onsuccess>
+    <step>
+      <element id="a3cdb353-c2e0-4a5c-abf5-b74c533ebe95" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessID</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>Username</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="fa5daaaa-dbed-490e-b66c-0ceafec2ec20" name="Time Out1" type="WaitEnd">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="90" y="-150" w="30" h="30" />
+    <onsuccess>5993a1b9-99e8-45d3-ab7c-4795e0d90fb7</onsuccess>
+    <groupid>7e9bface-5be7-459e-9372-003f1ebf34f7</groupid>
+  </stage>
+  <stage stageid="267babda-a1f1-4b3f-9a61-4da47a32b1be" name="Wait1" type="WaitStart">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="90" y="-180" w="30" h="30" />
+    <groupid>7e9bface-5be7-459e-9372-003f1ebf34f7</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="c133420c-7f0f-42b2-a3f2-a961d04bb866" name="meeting id" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>02c0433d-7b1d-4089-ac5a-d3a590b30bbb</onsuccess>
+    <step>
+      <element id="944c776c-1156-4ccd-8337-17a6eb81def4" />
+      <action>
+        <id>UIASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>[link]</value>
+          </argument>
+          <argument>
+            <id>interval</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="266b381b-4f59-41b5-b81b-0756baf3a531" name="name" type="Data">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <display x="165" y="-120" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5fa22600-5519-48fd-a54f-d0f074ce1062" name="link" type="Data">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <display x="165" y="-165" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f2bf5ed4-084e-4a35-b530-d323a4960c17" name="password" type="Data">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <display x="165" y="-60" />
+    <datatype>password</datatype>
+    <initialvalueenc>
+    </initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="02c0433d-7b1d-4089-ac5a-d3a590b30bbb" name="name" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="-60" />
+    <onsuccess>52789eac-9f06-42d9-a17b-ed8e6134dd61</onsuccess>
+    <step>
+      <element id="ebbe40d6-b112-4fee-a16a-b41a2f2957f4" />
+      <action>
+        <id>UIASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>[name]</value>
+          </argument>
+          <argument>
+            <id>interval</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="9b9c8685-19bf-4ebd-a9f6-a2d68a3eaf80" name="join1" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="60" />
+    <onsuccess>f2280305-faaa-4df5-8952-603423cfc3ea</onsuccess>
+    <step>
+      <element id="5fd1e677-ba12-4271-969e-4fb60ecdb4e0" />
+      <action>
+        <id>UIAClickCentre</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="ae0272a4-ab3b-462a-a526-5fd19eb2f995" name="password" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <onsuccess>3c33c6eb-aa01-45b3-92c3-430947ae38e9</onsuccess>
+    <step>
+      <element id="fd022d29-2c1f-40f0-a638-cfcd8910323b" />
+      <action>
+        <id>UIASendKeys</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>[password]</value>
+          </argument>
+          <argument>
+            <id>interval</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="ffc2afb5-1f08-45e2-a974-3110838a49e3" name="join2" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="135" />
+    <onsuccess>cf7816b0-6e58-4af7-9605-c1ba3fd4909e</onsuccess>
+    <step>
+      <element id="e9418814-daf2-411f-b5f9-2e8a246cc550" />
+      <action>
+        <id>UIAClickCentre</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="9cec8f58-d246-4cd5-8a24-38b9e6e2d979" name="Time Out2" type="WaitEnd">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="105" y="90" w="30" h="30" />
+    <onsuccess>ae0272a4-ab3b-462a-a526-5fd19eb2f995</onsuccess>
+    <groupid>9145e6ad-7e3b-4192-af00-1f2db8448591</groupid>
+  </stage>
+  <stage stageid="f2280305-faaa-4df5-8952-603423cfc3ea" name="Wait2" type="WaitStart">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="105" y="60" w="30" h="30" />
+    <groupid>9145e6ad-7e3b-4192-af00-1f2db8448591</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="8f8899f5-ace7-41bd-8841-6aef21df9f98" name="Time Out3" type="WaitEnd">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="-75" y="135" w="30" h="30" />
+    <onsuccess>ffc2afb5-1f08-45e2-a974-3110838a49e3</onsuccess>
+    <groupid>be69471f-cfa2-4983-aa2c-04cc6f035038</groupid>
+  </stage>
+  <stage stageid="3c33c6eb-aa01-45b3-92c3-430947ae38e9" name="Wait3" type="WaitStart">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="-75" y="90" w="30" h="30" />
+    <groupid>be69471f-cfa2-4983-aa2c-04cc6f035038</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="52789eac-9f06-42d9-a17b-ed8e6134dd61" name="check box" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="-15" />
+    <onsuccess>8c50c5c9-d5d8-4e63-bb5a-c10bf90cad27</onsuccess>
+    <step>
+      <element id="8beb1973-8dfd-41d7-8092-28388dcae871" />
+      <action>
+        <id>UIAClickCentre</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="8c50c5c9-d5d8-4e63-bb5a-c10bf90cad27" name="check2" type="Navigate">
+    <subsheetid>b83bd33d-34da-4ba2-9e07-0b91997830ce</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <onsuccess>9b9c8685-19bf-4ebd-a9f6-a2d68a3eaf80</onsuccess>
+    <step>
+      <element id="832ac11c-6917-47f9-b04d-877087f470b4" />
+      <action>
+        <id>UIAClickCentre</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+</process>

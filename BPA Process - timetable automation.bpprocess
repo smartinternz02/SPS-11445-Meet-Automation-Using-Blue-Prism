@@ -1,0 +1,347 @@
+﻿<process name="timetable automation" version="1.0" bpversion="6.10.2.42081" narrative="" byrefcollection="true" preferredid="c84d47d1-e502-4f5b-b74b-f68388114a27" published="true">
+  <view>
+    <camerax>133</camerax>
+    <cameray>1</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="02e4d536-0866-44ff-ad91-53c4cabcd2ce" type="Normal" published="False">
+    <name>get class details</name>
+    <view>
+      <camerax>141</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="dade505c-dd79-41b7-979f-6912d541ad1a" name="Start" type="Start">
+    <display x="-90" y="-165" />
+    <onsuccess>a832f8e5-1cbb-4bf4-8f59-a397bc2e942b</onsuccess>
+  </stage>
+  <stage stageid="7c964f3b-5018-4dcc-b802-e97144085737" name="End" type="End">
+    <display x="345" y="180" />
+  </stage>
+  <stage stageid="6ffab370-8997-4e22-923f-c4875b7c8538" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="0db1359b-260a-45f7-b3a9-c58d7f0f811f" name="time table" type="Collection">
+    <display x="195" y="-105" />
+    <datatype>collection</datatype>
+    <alwaysinit />
+    <collectioninfo>
+      <field name="time" type="time" />
+      <field name="monday " type="text" />
+      <field name="tuesday" type="text" />
+      <field name="wednesday" type="text" />
+      <field name="thursday" type="text" />
+      <field name="friday" type="text" />
+      <field name="saturday" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="time" type="time" value="10:30:00" />
+        <field name="monday " type="text" value="dbmslab" />
+        <field name="tuesday" type="text" value="ps" />
+        <field name="wednesday" type="text" value="ss" />
+        <field name="thursday" type="text" value="java" />
+        <field name="friday" type="text" value="javalab" />
+        <field name="saturday" type="text" value="co" />
+      </row>
+      <row>
+        <field name="time" type="time" value="11:30:00" />
+        <field name="monday " type="text" value="dbmslab" />
+        <field name="tuesday" type="text" value="dbms" />
+        <field name="wednesday" type="text" value="ps" />
+        <field name="thursday" type="text" value="dbms" />
+        <field name="friday" type="text" value="javalab" />
+        <field name="saturday" type="text" value="fa" />
+      </row>
+      <row>
+        <field name="time" type="time" value="13:30:00" />
+        <field name="monday " type="text" value="ss" />
+        <field name="tuesday" type="text" value="java" />
+        <field name="wednesday" type="text" value="dbms" />
+        <field name="thursday" type="text" value="co" />
+        <field name="friday" type="text" value="fa" />
+        <field name="saturday" type="text" value="dbms" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="62ae1750-d8fa-4493-9200-a77119e37678" name="class name" type="Data">
+    <loginhibit onsuccess="true" />
+    <narrative>l</narrative>
+    <display x="270" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a832f8e5-1cbb-4bf4-8f59-a397bc2e942b" name="Loop Start1" type="LoopStart">
+    <loginhibit onsuccess="true" />
+    <display x="-15" y="-165" />
+    <onsuccess>f40746d9-9912-4e40-9442-1bce7bbdfb44</onsuccess>
+    <groupid>390f0dc0-a311-49f2-93d9-581abff5e74b</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>time table</loopdata>
+  </stage>
+  <stage stageid="25fca421-d8e6-41ee-b011-880389cf5727" name="Loop End1" type="LoopEnd">
+    <loginhibit onsuccess="true" />
+    <display x="-15" y="180" />
+    <onsuccess>7c964f3b-5018-4dcc-b802-e97144085737</onsuccess>
+    <groupid>390f0dc0-a311-49f2-93d9-581abff5e74b</groupid>
+  </stage>
+  <stage stageid="f40746d9-9912-4e40-9442-1bce7bbdfb44" name="classes" type="ChoiceStart">
+    <display x="-15" y="-120" />
+    <groupid>2da42f3d-2107-48bc-97fe-8f170fe58710</groupid>
+    <choices>
+      <choice expression="LocalTime()&lt;=[time table.time] AND LocalTime()&lt;=MakeTime(10, 30, 0)">
+        <name>class1</name>
+        <distance>26.25</distance>
+        <ontrue>fcf7a1e1-068a-423e-8f6f-43654921108d</ontrue>
+      </choice>
+      <choice expression="LocalTime()&lt;=[time table.time] AND LocalTime()&lt;=MakeTime(11, 30, 0)">
+        <name>class2</name>
+        <distance>52.5</distance>
+        <ontrue>fcf7a1e1-068a-423e-8f6f-43654921108d</ontrue>
+      </choice>
+      <choice expression="LocalTime()&lt;=[time table.time] AND LocalTime()&lt;=MakeTime(13, 30, 0)">
+        <name>class3</name>
+        <distance>78.75</distance>
+        <ontrue>fcf7a1e1-068a-423e-8f6f-43654921108d</ontrue>
+      </choice>
+    </choices>
+  </stage>
+  <stage stageid="a86b2ac0-4659-4650-b0c7-156517dd35bd" name="last class" type="ChoiceEnd">
+    <display x="-15" y="-15" />
+    <onsuccess>25fca421-d8e6-41ee-b011-880389cf5727</onsuccess>
+    <groupid>2da42f3d-2107-48bc-97fe-8f170fe58710</groupid>
+  </stage>
+  <stage stageid="fcf7a1e1-068a-423e-8f6f-43654921108d" name="day" type="ChoiceStart">
+    <display x="90" y="-75" />
+    <groupid>008c5861-ed5d-4007-8929-9dad1308a09b</groupid>
+    <choices>
+      <choice expression="FormatDate(Today(), &quot;dddd&quot;)=&quot;Monday&quot;">
+        <name>monday</name>
+        <distance>30</distance>
+        <ontrue>158e5792-b51a-4d1e-8db3-014ccceff318</ontrue>
+      </choice>
+      <choice expression="FormatDate(Today(), &quot;dddd&quot;)=&quot;Tuesday&quot;">
+        <name>tuesday</name>
+        <distance>60</distance>
+        <ontrue>594f9edd-354e-4bda-afce-88ffb45b6146</ontrue>
+      </choice>
+      <choice expression="FormatDate(Today(), &quot;dddd&quot;)=&quot;Wednesday&quot;">
+        <name>wednesday</name>
+        <distance>90</distance>
+        <ontrue>33f7e02a-07e2-4e25-8367-874fab7cc4c8</ontrue>
+      </choice>
+      <choice expression="FormatDate(Today(), &quot;dddd&quot;)=&quot;Thursday&quot;">
+        <name>thursday</name>
+        <distance>120</distance>
+        <ontrue>3c967747-6869-4ca6-b77c-73d49a369b1f</ontrue>
+      </choice>
+      <choice expression="FormatDate(Today(), &quot;dddd&quot;)=&quot;Friday&quot;">
+        <name>friday</name>
+        <distance>150</distance>
+        <ontrue>bfe39fd0-112c-4c22-8722-49211763b1b4</ontrue>
+      </choice>
+      <choice expression="FormatDate(Today(),&quot;dddd&quot;)=&quot;Saturday&quot;">
+        <name>saturday</name>
+        <distance>180</distance>
+        <ontrue>ac77239a-0c62-45a7-9894-2fba0e61cb09</ontrue>
+      </choice>
+    </choices>
+  </stage>
+  <stage stageid="8b9b4d4f-ba4c-4624-8cb2-413d10b6449d" name="Otherwise2" type="ChoiceEnd">
+    <display x="90" y="150" />
+    <onsuccess>66b5b32b-4e55-41fc-b96f-c142d58c3611</onsuccess>
+    <groupid>008c5861-ed5d-4007-8929-9dad1308a09b</groupid>
+  </stage>
+  <stage stageid="158e5792-b51a-4d1e-8db3-014ccceff318" name="monday" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="-45" />
+    <onsuccess>18fee8b5-9bf2-42ff-bad9-62fb61f69033</onsuccess>
+    <calculation expression="[time table.monday ]" stage="class name" />
+  </stage>
+  <stage stageid="594f9edd-354e-4bda-afce-88ffb45b6146" name="tuesday" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="-15" />
+    <onsuccess>18fee8b5-9bf2-42ff-bad9-62fb61f69033</onsuccess>
+    <calculation expression="[time table.tuesday]" stage="class name" />
+  </stage>
+  <stage stageid="33f7e02a-07e2-4e25-8367-874fab7cc4c8" name="wednesday" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="15" />
+    <onsuccess>18fee8b5-9bf2-42ff-bad9-62fb61f69033</onsuccess>
+    <calculation expression="[time table.wednesday]" stage="class name" />
+  </stage>
+  <stage stageid="3c967747-6869-4ca6-b77c-73d49a369b1f" name="thursaday" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="45" />
+    <onsuccess>18fee8b5-9bf2-42ff-bad9-62fb61f69033</onsuccess>
+    <calculation expression="[time table.thursday]" stage="class name" />
+  </stage>
+  <stage stageid="bfe39fd0-112c-4c22-8722-49211763b1b4" name="friday" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="75" />
+    <onsuccess>18fee8b5-9bf2-42ff-bad9-62fb61f69033</onsuccess>
+    <calculation expression="[time table.friday]" stage="class name" />
+  </stage>
+  <stage stageid="ac77239a-0c62-45a7-9894-2fba0e61cb09" name="saturday" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="105" />
+    <onsuccess>18fee8b5-9bf2-42ff-bad9-62fb61f69033</onsuccess>
+    <calculation expression="[time table.saturday]" stage="class name" />
+  </stage>
+  <stage stageid="66b5b32b-4e55-41fc-b96f-c142d58c3611" name="Sunday" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="210" y="150" />
+    <onsuccess>d6966ed0-8a62-4e27-bd6b-6ddcd15efc77</onsuccess>
+    <calculation expression="&quot;yay,no classes today&quot;" stage="class name" />
+  </stage>
+  <stage stageid="3715e57c-4b2a-43dd-a881-7264295af1f1" name="get class details" type="SubSheetInfo">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="d59be9f1-841f-4d6c-bcfe-17879af70a20" name="Start" type="Start">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <display x="0" y="-105" />
+    <onsuccess>0d249adc-d080-4fa3-ad61-1371a656e0cb</onsuccess>
+  </stage>
+  <stage stageid="c1025b41-0383-4b45-99a9-f0c2219f76a1" name="End" type="End">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <display x="90" y="90" />
+  </stage>
+  <stage stageid="18fee8b5-9bf2-42ff-bad9-62fb61f69033" name="get class details" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="345" y="45" />
+    <onsuccess>d6966ed0-8a62-4e27-bd6b-6ddcd15efc77</onsuccess>
+    <processid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</processid>
+  </stage>
+  <stage stageid="beeba501-bef7-4125-8da6-efa90cc62bc4" name="class log in details" type="Collection">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <display x="165" y="-90" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="subject" type="text" />
+      <field name="mode" type="text" />
+      <field name="login details" type="text" />
+      <field name="password" type="password" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="subject" type="text" value="co" />
+        <field name="mode" type="text" value="Zoom" />
+        <field name="login details" type="text" value="725 9926 9793" />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:HSprKnsqHyp6Knsq" />
+      </row>
+      <row>
+        <field name="subject" type="text" value="java" />
+        <field name="mode" type="text" value="Zoom" />
+        <field name="login details" type="text" value="774 9365 5259" />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:TSp6KnMqeypAKhwq" />
+      </row>
+      <row>
+        <field name="subject" type="text" value="javalab" />
+        <field name="mode" type="text" value="Zoom" />
+        <field name="login details" type="text" value="774 9365 5259" />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:TSp6KnMqeypAKhwq" />
+      </row>
+      <row>
+        <field name="subject" type="text" value="ss" />
+        <field name="mode" type="text" value="Zoom" />
+        <field name="login details" type="text" value="780 1537 6469" />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:YiobKn0qWypEKhoq" />
+      </row>
+      <row>
+        <field name="subject" type="text" value="dbms" />
+        <field name="mode" type="text" value="meet" />
+        <field name="login details" type="text" value="https://meet.google.com/zqe-gcsu-piw" />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:" />
+      </row>
+      <row>
+        <field name="subject" type="text" value="dbmslab" />
+        <field name="mode" type="text" value="meet" />
+        <field name="login details" type="text" value="https://meet.google.com/zqe-gcsu-piw" />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:" />
+      </row>
+      <row>
+        <field name="subject" type="text" value="ps" />
+        <field name="mode" type="text" value="meet" />
+        <field name="login details" type="text" value="https://meet.google.com/etv-ohvk-vuk" />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:" />
+      </row>
+      <row>
+        <field name="subject" type="text" value="fa" />
+        <field name="mode" type="text" value="meet" />
+        <field name="login details" type="text" value="https://meet.google.com/xxs-xzjk-yvj " />
+        <field name="password" type="password" encvalue="aCpGKl8qTyp6KlgqQypZKkcqBCppKkUqRypHKkUqRCoEKnkqTypJKl8qWCpDKl4qUyoEKnkqQypHKloqRipPKmUqSCpMKl8qWSpJKksqXipFKlgq:" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="0d249adc-d080-4fa3-ad61-1371a656e0cb" name="Loop Start2" type="LoopStart">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="0" y="-45" />
+    <onsuccess>e3c28bcd-7954-4d9b-ada9-12c7bfd040b8</onsuccess>
+    <groupid>9e763c0d-9d8b-4dda-9c28-414b3ec33c76</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>class log in details</loopdata>
+  </stage>
+  <stage stageid="315ad1a7-c918-438b-aab6-7b246c7e3fdc" name="Loop End2" type="LoopEnd">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="0" y="90" />
+    <onsuccess>c1025b41-0383-4b45-99a9-f0c2219f76a1</onsuccess>
+    <groupid>9e763c0d-9d8b-4dda-9c28-414b3ec33c76</groupid>
+  </stage>
+  <stage stageid="e3c28bcd-7954-4d9b-ada9-12c7bfd040b8" name="get login details" type="Decision">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <display x="0" y="0" />
+    <decision expression="[class log in details.subject]=[class name]" />
+    <ontrue>e586cc0c-b457-4bde-998a-6b63c07373db</ontrue>
+    <onfalse>315ad1a7-c918-438b-aab6-7b246c7e3fdc</onfalse>
+  </stage>
+  <stage stageid="e586cc0c-b457-4bde-998a-6b63c07373db" name="get mode" type="Decision">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <display x="90" y="0" />
+    <decision expression="[class log in details.mode]=&quot;Zoom&quot;" />
+    <ontrue>beefc982-719b-48df-a8f0-d5f367c08ac0</ontrue>
+    <onfalse>2b224853-8902-4d4f-8bd4-2dc2dd436409</onfalse>
+  </stage>
+  <stage stageid="beefc982-719b-48df-a8f0-d5f367c08ac0" name="zoom automation(launch)::lauch" type="Action">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="210" y="0" />
+    <onsuccess>846dbb84-9267-44a2-9ae6-d81c34b99f26</onsuccess>
+    <resource object="zoom automation(launch)" action="lauch" />
+  </stage>
+  <stage stageid="846dbb84-9267-44a2-9ae6-d81c34b99f26" name="zoom automation join a meeting::join to the meeting" type="Action">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="210" y="90" />
+    <inputs>
+      <input type="text" name="name" friendlyname="name" expr="&quot;Y.Vyshnavi&quot;" />
+      <input type="text" name="link" friendlyname="link" expr="[class log in details.login details]" />
+      <input type="password" name="password" friendlyname="password" expr="[class log in details.password]" />
+    </inputs>
+    <onsuccess>c1025b41-0383-4b45-99a9-f0c2219f76a1</onsuccess>
+    <resource object="zoom automation join a meeting" action="join to the meeting" />
+  </stage>
+  <stage stageid="2b224853-8902-4d4f-8bd4-2dc2dd436409" name="google meet automation::join to the meet" type="Action">
+    <subsheetid>02e4d536-0866-44ff-ad91-53c4cabcd2ce</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="90" y="45" />
+    <inputs>
+      <input type="text" name="meeting link" friendlyname="meeting link" expr="[class log in details.login details]" />
+    </inputs>
+    <onsuccess>c1025b41-0383-4b45-99a9-f0c2219f76a1</onsuccess>
+    <resource object="google meet automation" action="join to the meet" />
+  </stage>
+  <stage stageid="d6966ed0-8a62-4e27-bd6b-6ddcd15efc77" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="345" y="150" w="10" h="10" />
+    <onsuccess>7c964f3b-5018-4dcc-b802-e97144085737</onsuccess>
+  </stage>
+</process>
